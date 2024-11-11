@@ -1,0 +1,84 @@
+/* General Navbar Styling */
+.header {
+    width: 100%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 1000;
+}
+
+.navbar {
+    background-color: #fff;
+    padding: 1rem 2rem;
+}
+
+.navbar-brand {
+    font-family: 'Sevillana', cursive;
+    font-size: 1.5rem;
+    color: #ff69b4;
+    font-weight: bold;
+}
+
+.navbar-toggler {
+    border: none;
+    outline: none;
+}
+
+.navbar-toggler-icon {
+    color: #ff69b4;
+}
+
+.navbar-collapse {
+    justify-content: flex-end;
+}
+
+.navbar-nav .nav-item .nav-link {
+    color: #333;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    transition: color 0.3s;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+    color: #ff69b4;
+}
+
+/* Button Styling */
+.buttons .btn {
+    border-radius: 20px;
+    padding: 0.5rem 1.2rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.buttons .btn-outline-primary {
+    color: #ff69b4;
+    border-color: #ff69b4;
+}
+
+.buttons .btn-outline-primary:hover {
+    background-color: #ff69b4;
+    color: #fff;
+}
+
+.buttons .btn-primary {
+    background-color: #ff69b4;
+    border-color: #ff69b4;
+    color: #fff;
+}
+
+.buttons .btn-primary:hover {
+    background-color: #ff4081;
+    border-color: #ff4081;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 991px) {
+    .navbar-nav {
+        text-align: center;
+    }
+    .buttons {
+        display: flex;
+        justify-content: center;
+        margin-top: 1rem;
+    }
+}

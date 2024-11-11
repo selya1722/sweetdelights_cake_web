@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sweet Treats - Cakes for Every Occasion</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="nav.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  </head>
+  <body>
+    <!-- Header Section -->
+    <header class="header">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light py-3 w-100">
+        <a class="navbar-brand logo" href="#">Sweet Delights</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="cakes.html">Cakes</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+            </ul>
+            <div class="buttons ml-lg-3">
+              <a href="#" class="btn btn-outline-primary btn-custom-size mr-2">Order Now</a>
+              <a href="#" class="btn btn-primary btn-custom-size">Join Us</a>
+          </div>
+          
+        </div>
+    </nav>
+    
+      
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <div class="hero">
+        <h1>Delicious Cakes <br>for Every Occasion</h1>
+        <p>
+          Discover our delightful range of cakes crafted with love.<br> Whether it’s a birthday, wedding, or just because, our cakes are made to make every moment special.
+        </p>
+        <div class="buttons">
+          <a href="#" class="join">Order Now</a>
+          <button onclick="changeBackgroundColor()" class="button">Yummy Colors</button>
+        </div>
+      </div>
+      <div class="img">
+        <img src="—Pngtree—colorful birthday cake decorated with_13063823.png" alt="Delicious cake" />
+      </div>
+    </section>
+
+    <!-- Cakes Section -->
+    <section id="cakes">
+      <h2 style="font-size:25px;font-family:'DyanaPuff',cursive; color: rgb(128, 21, 96);">............Our Cakes...........</h2>
+      <div id="cake-list"></div>
+    </section>
+    
+    <!--reviews-->
+    <section class="reviews-section">
+      <h2 class="section-title">Customer Reviews</h2>
+      <div class="reviews-container" id="reviews">
+         
+      </div>
+  </section>
+  
+    <!-- Contact Form Section -->
+    <section class="contact-section">
+      <div class="container">
+          <h2 class="section-title">Contact Us</h2>
+          <p class="section-description">We'd love to hear from you! Send us a message or email us directly.</p>
+          
+          <form class="contact-form">
+              <input type="email" class="contact-input" placeholder="Your Email Address" required>
+              <textarea class="contact-message" placeholder="Your Message" required></textarea>
+              <button type="submit" class="contact-submit">Send Message</button>
+          </form>
+      </div>
+  </section>
+  
+ 
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    
+    <script src="script.js"></script>
+    <script>
+      function changeBackgroundColor() {
+        const colors = ["#ffe6f2", "#ffccff", "#ff99cc", "#ff66b2", "#ffcce6"];
+        const randomColor = colors[Math.floor(Math.random() * colors.length)];
+        document.body.style.backgroundColor = randomColor;
+      }
+    </script>
+  </body>
+</html>
