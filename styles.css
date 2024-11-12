@@ -516,7 +516,6 @@ footer {
 /*contact*/
 
 .contact {
-  
   padding: 50px 20px;
   text-align: center;
 }
@@ -526,6 +525,7 @@ footer {
   color:#862448; 
   margin-bottom: 20px;
   font-family: 'DyanaPuff',cursive;
+  text-shadow: 2px 2px 6px rgb(117, 113, 113);
 }
 
 /* Form Styling */
