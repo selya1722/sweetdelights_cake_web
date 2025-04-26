@@ -272,12 +272,16 @@ html{
 }
 
 .cake-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   background-color: #fff;
   border-radius: 10px;
   padding: 15px;
   text-align: center;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s;
+  height: 100%; /* makes cards same height */
 }
 
 .cake-item:hover {
@@ -286,7 +290,7 @@ html{
 
 .cake-item img {
   width: 100%;
-  height: auto;
+  height: 180px;
   border-radius: 10px;
   margin-bottom: 10px;
 }
@@ -297,9 +301,20 @@ html{
   margin-bottom: 8px;
 }
 
+
 .cake-item p {
   font-size: 0.9rem;
   color: #555;
+  margin-bottom: 10px; /* give a little breathing space */
+}
+
+.price {
+  margin-top: auto;
+  font-weight: bold;
+  color: #d2691e;
+  text-align: left;
+  font-size: 1rem;
+  padding-top: 8px;
 }
 
 /* About Section */
