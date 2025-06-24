@@ -1,108 +1,151 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cake Gallery</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cake Gallery</title>
+
+  <!-- Logo Style -->
+  <style>
+    .logo {
+      font-family: 'Playfair Display', cursive;
+      font-size: 3.5rem;
+      background: linear-gradient(to top left, #ff75c3, #ff477e, #d095db, #ff9cc5, #f37bb3, #cd93ff);
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+      -webkit-text-fill-color: transparent;
+      display: inline-block;
+    }
+  </style>
+
+ <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="nav.css" />
-    <link href="https://fonts.google.com/specimen/DynaPuff?preview.text=sweet%20delight" rel="stylesheet" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 <body>
-    <header class="header">
-      <nav class="navbar navbar-expand-lg navbar-light bg-light py-3 w-100">
-        <a class="navbar-brand logo" href="#">Sweet Delights</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="index.html">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="about.html">About Us</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="cakes.html">Cakes</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="contact.html">Contact</a>
-                </li>
-            </ul>
-            <div class="buttons ml-lg-3">
-                <a href="#" class="btn btn-outline-primary mr-2">Order Now</a>
-                <a href="#" class="btn btn-primary">Join Us</a>
-            </div>
+
+  <!-- NAVBAR -->
+  <header class="header">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light py-3 w-100">
+      <a class="navbar-brand logo" href="#">Sweet Delights</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="cakes.html">Cakes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+        <div class="buttons ml-lg-3">
+          <a href="cakes.html" class="btn btn-outline-primary btn-custom-size mr-2">Order Now</a>
+          <a href="#" class="btn btn-primary btn-custom-size">Join Us</a>
         </div>
+      </div>
     </nav>
-    </header>
-    
-    <div class="gallery-container">
-        <h1>Cake Gallery</h1>
-        <div class="cake-gallery">
-            <div class="cake-item">
-                <img src="https://images.pexels.com/photos/291528/pexels-photo-291528.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Chocolate Fudge Cake">
-                <h3>Chocolate Fudge Cake</h3>
-                <p>A rich chocolate cake with a gooey fudge center.</p>
-                <p class="price">$25.99</p>
-            </div>
-            <div class="cake-item">
-                <img src="https://www.tasteofhome.com/wp-content/uploads/2018/01/Vanilla-Bean-Cake-with-White-Chocolate-Ganache_exps129488_HC2379809B04_03_5b_RMS-8.jpg" alt="Vanilla Bean Delight">
-                <h3>Vanilla Bean Delight</h3>
-                <p>A soft vanilla cake topped with whipped cream.</p>
-                <p class="price">$22.99</p>
-            </div>
-            <div class="cake-item">
-                <img src="https://thescranline.com/wp-content/uploads/2023/06/RED-VELVET-CAKE-23-S-01.jpg" alt="Red Velvet Dream">
-                <h3>Red Velvet Dream</h3>
-                <p>A moist red velvet cake with cream cheese frosting.</p>
-                <p class="price">$28.50</p>
-            </div>
-            <div class="cake-item">
-                <img src="https://d1yfn1dfres2va.cloudfront.net/011/02/50/02504c9998c3c485657a24626895eef2_250x250.jpg" alt="Lemon Drizzle Cake">
-                <h3>Lemon Drizzle Cake</h3>
-                <p>A tangy lemon cake with a zesty glaze.</p>
-                <p class="price">$18.75</p>
-            </div>
-            <div class="cake-item">
-                <img src="https://celebratingsweets.com/wp-content/uploads/2018/06/Strawberry-Shortcake-Cake-1-1.jpg" alt="Strawberry Shortcake">
-                <h3>Strawberry Shortcake</h3>
-                <p>A delightful cake layered with fresh strawberries and whipped cream.</p>
-                <p class="price">$24.99</p>
-            </div>
-            <div class="cake-item">
-                <img src="https://www.yummycake.co.in/wp-content/uploads/2022/11/Black-Forest-Cake.jpeg" alt="Black Forest Cake">
-                <h3>Black Forest Cake</h3>
-                <p>A moist chocolate cake topped with cream icing.</p>
-                <p class="price">$26.50</p>
-            </div>
-            <div class="cake-item">
-                <img src="https://th.bing.com/th/id/R.1be2d2a5d3969914d06648bd98af5ad6?rik=WkyxKi%2bRj1k6fw&riu=http%3a%2f%2fcdn.ecommercedns.uk%2ffiles%2f3%2f232753%2f7%2f8627637%2f15.png&ehk=BIRsGj43G8qPzifwYq%2bA%2bbFh57qRypPC4q9F22hIiIY%3d&risl=&pid=ImgRaw&r=0" alt="Carrot Cake">
-                <h3>Carrot Cake</h3>
-                <p>A spiced carrot cake with cream cheese frosting.</p>
-                <p class="price">$19.99</p>
-            </div>
-            <div class="cake-item">
-                <img src="https://tse3.mm.bing.net/th/id/OIP.7f4-M_JAFFhbp3YW91Y4jQHaHa?w=600&h=600&rs=1&pid=ImgDetMain" alt="Almond Cake">
-                <h3>Almond Cake</h3>
-                <p>A light and fluffy almond-flavored cake with buttercream icing.</p>
-                <p class="price">$21.50</p>
-            </div>
-            <div class="cake-item">
-                <img src="https://tse1.mm.bing.net/th/id/OIP.sBKjOv_LTicdXIsKvHINQQHaHa?rs=1&pid=ImgDetMain" alt="Peach Cake">
-                <h3>Peach Cake</h3>
-                <p>A sweet peach cake topped with peach slices and whipped cream.</p>
-                <p class="price">$23.99</p>
-            </div>
-            <div class="cake-item">
-                <img src="https://www.thechunkychef.com/wp-content/uploads/2020/07/coffee-cake-recipe-card.jpg" alt="Coffee Cake">
-                <h3>Coffee Cake</h3>
-                <p>A moist cake with a coffee flavor and crumbly streusel topping.</p>
-                <p class="price">$20.99</p>
-            </div>
-        </div>
+  </header>
+
+  <!-- CAKE GALLERY -->
+  <div class="gallery-container">
+    <h1>Cake Gallery</h1>
+    <div class="cake-gallery">
+      <!-- Cake Item 1 -->
+      <div class="cake-item">
+        <img src="https://images.pexels.com/photos/291528/pexels-photo-291528.jpeg" alt="Chocolate Fudge Cake">
+        <h3>Chocolate Fudge Cake</h3>
+        <p>A rich chocolate cake with a gooey fudge center.</p>
+        <p class="price">$25.99</p>
+      </div>
+
+      <!-- Cake Item 2 -->
+      <div class="cake-item">
+        <img src="https://www.tasteofhome.com/wp-content/uploads/2018/01/Vanilla-Bean-Cake-with-White-Chocolate-Ganache_exps129488_HC2379809B04_03_5b_RMS-8.jpg" alt="Vanilla Bean Delight">
+        <h3>Vanilla Bean Delight</h3>
+        <p>A soft vanilla cake topped with whipped cream.</p>
+        <p class="price">$22.99</p>
+      </div>
+
+      <!-- Cake Item 3 -->
+      <div class="cake-item">
+        <img src="https://thescranline.com/wp-content/uploads/2023/06/RED-VELVET-CAKE-23-S-01.jpg" alt="Red Velvet Dream">
+        <h3>Red Velvet Dream</h3>
+        <p>A moist red velvet cake with cream cheese frosting.</p>
+        <p class="price">$28.50</p>
+      </div>
+
+      <!-- Cake Item 4 -->
+      <div class="cake-item">
+        <img src="https://d1yfn1dfres2va.cloudfront.net/011/02/50/02504c9998c3c485657a24626895eef2_250x250.jpg" alt="Lemon Drizzle Cake">
+        <h3>Lemon Drizzle Cake</h3>
+        <p>A tangy lemon cake with a zesty glaze.</p>
+        <p class="price">$18.75</p>
+      </div>
+
+      <!-- Cake Item 5 -->
+      <div class="cake-item">
+        <img src="https://celebratingsweets.com/wp-content/uploads/2018/06/Strawberry-Shortcake-Cake-1-1.jpg" alt="Strawberry Shortcake">
+        <h3>Strawberry Shortcake</h3>
+        <p>A delightful cake layered with fresh strawberries and whipped cream.</p>
+        <p class="price">$24.99</p>
+      </div>
+
+      <!-- Cake Item 6 -->
+      <div class="cake-item">
+        <img src="https://www.yummycake.co.in/wp-content/uploads/2022/11/Black-Forest-Cake.jpeg" alt="Black Forest Cake">
+        <h3>Black Forest Cake</h3>
+        <p>A moist chocolate cake topped with cream icing.</p>
+        <p class="price">$26.50</p>
+      </div>
+
+      <!-- Cake Item 7 -->
+      <div class="cake-item">
+        <img src="https://cdn.ecommercedns.uk/files/3/232753/7/8627637/15.png" alt="Carrot Cake">
+        <h3>Carrot Cake</h3>
+        <p>A spiced carrot cake with cream cheese frosting.</p>
+        <p class="price">$19.99</p>
+      </div>
+
+      <!-- Cake Item 8 -->
+      <div class="cake-item">
+        <img src="https://tse3.mm.bing.net/th/id/OIP.7f4-M_JAFFhbp3YW91Y4jQHaHa" alt="Almond Cake">
+        <h3>Almond Cake</h3>
+        <p>A light and fluffy almond-flavored cake with buttercream icing.</p>
+        <p class="price">$21.50</p>
+      </div>
+
+      <!-- Cake Item 9 -->
+      <div class="cake-item">
+        <img src="https://tse1.mm.bing.net/th/id/OIP.sBKjOv_LTicdXIsKvHINQQHaHa" alt="Peach Cake">
+        <h3>Peach Cake</h3>
+        <p>A sweet peach cake topped with peach slices and whipped cream.</p>
+        <p class="price">$23.99</p>
+      </div>
+
+      <!-- Cake Item 10 -->
+      <div class="cake-item">
+        <img src="https://www.thechunkychef.com/wp-content/uploads/2020/07/coffee-cake-recipe-card.jpg" alt="Coffee Cake">
+        <h3>Coffee Cake</h3>
+        <p>A moist cake with a coffee flavor and crumbly streusel topping.</p>
+        <p class="price">$20.99</p>
+      </div>
     </div>
+  </div>
+
+  <!-- Bootstrap JS Scripts for Menu Toggle -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
