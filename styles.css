@@ -11,7 +11,7 @@
 body {
   height: 100vh;
   width: 100%;
-  background-color: rgb(253, 216, 222)!important;
+  background-color: rgb(253, 216, 222) !important;
   transition: background-color 0.3s ease;
 }
 
@@ -20,13 +20,12 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 10; /* Ensure the header stays above other content */
+  z-index: 10;
 }
 
-html{
+html {
   scroll-behavior: smooth;
 }
-
 
 .hero-section {
   display: flex;
@@ -36,7 +35,7 @@ html{
   padding: 0 15px;
   max-width: 1200px;
   margin: 0 auto;
-  margin-top: 20px; 
+  margin-top: 20px;
 }
 
 .hero-section .hero {
@@ -58,25 +57,23 @@ html{
   line-height: 1.7;
   margin-bottom: 20px;
   color: #3d3b3c;
-  
 }
 
 .hero-section .img img {
   width: 400px;
   border-radius: 20px;
   max-width: 100%;
-  filter: drop-shadow(5px 5px 5px #222); 
-  transition: transform 0.3s ease, box-shadow 0.3s ease; 
+  filter: drop-shadow(5px 5px 5px #222);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .hero-section .img img:hover {
   transform: scale(1.05);
-  border-color: #d68cbe; 
+  border-color: #d68cbe;
 }
 
 .hero-section .buttons {
   margin-top: 40px;
-  
 }
 
 .hero-section .buttons a {
@@ -93,31 +90,27 @@ html{
   transition: background-color 0.3s ease;
   border-color: #000000;
   box-shadow: 2px 2px 4px rgb(61, 60, 60);
-  
-  
 }
 
 .hero-section .buttons a:hover {
   background-color: #cc66a5;
-  box-shadow: 2px 2px 4px rgb(61, 60, 60);
 }
-
 
 #menu-toggle {
-  display: block !important;/* Change to block or flex as needed */
-  background: #ff69b4 !important; /* Set your desired background color */
-  color: white !important; /* Set text color */
-  padding: 10px 15px !important; /* Add padding for better spacing */
-  border: none !important; /* Remove default border */
-  border-radius: 5px !important; /* Optional: rounded corners */
-  cursor: pointer !important; /* Change cursor on hover */
-  font-size: 16px !important; /* Adjust font size as needed */
-}
-.btn-custom-size {
-  padding: 10px 20px; /* Adjust padding as needed */
-  font-size: 14px;   /* Adjust font size */
+  display: block !important;
+  background: #ff69b4 !important;
+  color: white !important;
+  padding: 10px 15px !important;
+  border: none !important;
+  border-radius: 5px !important;
+  cursor: pointer !important;
+  font-size: 16px !important;
 }
 
+.btn-custom-size {
+  padding: 10px 20px;
+  font-size: 14px;
+}
 
 #hey-btn {
   font-size: 1.8rem;
@@ -127,62 +120,11 @@ html{
   order: 1;
 }
 
-@media screen and (max-width: 1023px) {
-  #hey-btn {
-    display: block;
-  }
-
-  .links {
-    position: fixed;
-    left: -100%;
-    top: 75px;
-    width: 100%;
-    height: 100vh;
-    padding-top: 50px;
-    background: rgb(253, 216, 222);
-    flex-direction: column;
-    transition: 0.3s ease;
-  }
-
-  #menu-toggle:checked ~ .links {
-    left: 0;
-    #menu-toggle {
-      display: block !important; /* Change to block or flex as needed */
-      background: #ff69b4 !important;/* Set your desired background color */
-      color: white !important; /* Set text color */
-      padding: 10px 15px; /* Add padding for better spacing */
-      border: none!important;  /* Remove default border */
-      border-radius: 5px !important; /* Optional: rounded corners */
-      cursor: pointer !important; /* Change cursor on hover */
-      font-size: 16px !important; /* Adjust font size as needed */
-    }
-    
-  }
-
-  .buttons {
-    display: none;
-    
-  }
+.links {
+  display: flex;
+  gap: 15px;
 }
-
-.hero-section .hero {
-  max-width: 100%;
-  text-align: center;
-}
-
-.hero-section .img img {
-  width: 100%;
-  height: auto; 
-  max-height: 450px; 
-  border-radius: 20px; 
-  filter: drop-shadow(5px 5px 5px #222);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.hero-section .img img:hover {
-  transform: scale(1.05);
-}
-
+/*buttons */
 .button {
   background-color: #ee3b62;
   border-radius: 10px;
@@ -204,13 +146,13 @@ html{
   background-color: #ca74a2;
 }
 
+
 /* Our Cakes */
 #cakes {
   text-align: center;
   padding: 20px;
   color: #501741;
   margin-top: 30px;
- 
 }
 
 #cake-list {
@@ -222,7 +164,6 @@ html{
 }
 
 .cake-item {
-  
   border-radius: 10px;
   padding: 10px;
   transition: transform 0.3s;
@@ -248,7 +189,6 @@ html{
 .gallery-container {
   text-align: center;
   padding: 40px 20px;
-
 }
 
 .gallery-container h1 {
@@ -256,9 +196,8 @@ html{
   margin-bottom: 40px;
   margin-top: 80px;
   color: #862448;
-  font-family: 'DyanaPuff',cursive;
+  font-family: 'DyanaPuff', cursive;
   text-shadow: 2px 2px 4px #9b9b9b;
-
 }
 
 .cake-gallery {
@@ -281,11 +220,7 @@ html{
   text-align: center;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s;
-  height: 100%; /* makes cards same height */
-}
-
-.cake-item:hover {
-  transform: scale(1.05);
+  height: 100%;
 }
 
 .cake-item img {
@@ -301,11 +236,10 @@ html{
   margin-bottom: 8px;
 }
 
-
 .cake-item p {
   font-size: 0.9rem;
   color: #555;
-  margin-bottom: 10px; /* give a little breathing space */
+  margin-bottom: 10px;
 }
 
 .price {
@@ -332,7 +266,7 @@ html{
   height: auto;
   border-radius: 10px;
   filter: drop-shadow(5px 5px 5px #222);
-  margin-top: 110px; 
+  margin-top: 110px;
 }
 
 .about-content {
@@ -348,7 +282,6 @@ html{
 .about-content h2 {
   font-size: 2.5rem;
   margin-bottom: 20px;
-  
 }
 
 .about-content p {
@@ -369,70 +302,65 @@ footer {
   padding: 20px;
   background-color: #d68cbe;
   color: #fff;
-  position: relative; /* Allow it to flow with the document */
+  position: relative;
   bottom: 0;
   width: 100%;
 }
 
-/*contact*/
-
-
-/* Contact Form Section Styling */
 /* Contact Section Styling */
 .contact-section {
-    
-    padding: 3rem 0;
-    text-align: center;
-    color: #333;
+  padding: 3rem 0;
+  text-align: center;
+  color: #333;
 }
 
 .section-title {
-    font-size: 2rem;
-    color: #ff69b4; /* Pink title color */
-    margin-bottom: 1rem;
-    font-family: 'Sevillana', cursive;
+  font-size: 2rem;
+  color: #ff69b4;
+  margin-bottom: 1rem;
+  font-family: 'Sevillana', cursive;
 }
 
 .section-description {
-    font-size: 1rem;
-    color: #555;
-    margin-bottom: 2rem;
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 2rem;
 }
 
-/* Contact Form Styling */
 .contact-form {
-    max-width: 500px;
-    margin: 0 auto;
+  max-width: 500px;
+  margin: 0 auto;
 }
 
-.contact-input, .contact-message {
-    width: 100%;
-    padding: 1rem;
-    margin-bottom: 1rem;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    font-size: 1rem;
+.contact-input,
+.contact-message {
+  width: 100%;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
 }
 
-.contact-input:focus, .contact-message:focus {
-    border-color: #ff69b4;
-    outline: none;
+.contact-input:focus,
+.contact-message:focus {
+  border-color: #ff69b4;
+  outline: none;
 }
 
-/* Submit Button Styling */
 .contact-submit {
-    padding: 0.7rem 2rem;
-    background-color: #ff69b4;
-    color: #fff;
-    border: none;
-    border-radius: 20px;
-    cursor: pointer;
-    font-size: 1rem;
-    transition: background-color 0.3s;
+  padding: 0.7rem 2rem;
+  background-color: #ff69b4;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s;
 }
 
 .contact-submit:hover {
-    background-color: #ff4081;
+  background-color: #ff4081;
 }
 
 .feedback {
@@ -442,24 +370,7 @@ footer {
   font-style: italic;
 }
 
-.logo {
-  font-family: 'Playwrite GB S', cursive;
-  font-size: 1.8rem !important;
-  background: linear-gradient(to top left,#ff75c3,#ff477e,#d095db,#ff9cc5,#f37bb3,#cd93ff);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-.signin {
-  background-color: #ff66b2;
-  color: #fff;
-  font-weight: bold;
-}
-.signup {
-  background-color: #d94b8b;
-  color: #fff;
-}
-
-/* Reviewer Image S*/
+/* Reviewer Cards */
 .review-card {
   display: flex;
   flex-direction: column;
@@ -480,18 +391,11 @@ footer {
   object-fit: cover;
   margin-bottom: 1rem;
 }
+
 /* Reviews Section */
 .reviews-section {
- 
   padding: 3rem 1rem;
   text-align: center;
-}
-
-.section-title {
-  font-size: 2rem;
-  color: #9b396a;
-  margin-bottom: 2rem;
-  font-family: 'Sevillana', cursive;
 }
 
 .reviews-container {
@@ -499,16 +403,6 @@ footer {
   flex-wrap: wrap;
   gap: 1.5rem;
   justify-content: center;
-}
-
-/* Individual Review Card Styling */
-.review-card {
-  background-color: #fff;
-  padding: 1.5rem;
-  border: 1px solid #ddd;
-  border-radius: 10px;
-  width: 280px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .review-text {
@@ -527,9 +421,7 @@ footer {
   color: #ff69b4;
 }
 
-
-/*contact*/
-
+/* Contact Form Full Section */
 .contact {
   padding: 50px 20px;
   text-align: center;
@@ -537,13 +429,12 @@ footer {
 
 .contact .heading {
   font-size: 2.5em;
-  color:#862448; 
+  color: #862448;
   margin-bottom: 20px;
-  font-family: 'DyanaPuff',cursive;
+  font-family: 'DyanaPuff', cursive;
   text-shadow: 2px 2px 6px rgb(117, 113, 113);
 }
 
-/* Form Styling */
 .contact form {
   max-width: 600px;
   margin: 0 auto;
@@ -566,7 +457,6 @@ footer {
   border: 1px solid #ddd;
   border-radius: 5px;
   font-size: 1em;
-  font-family: 'Arial', sans-serif;
 }
 
 .contact textarea {
@@ -574,19 +464,12 @@ footer {
   height: 150px;
 }
 
-.contact .input-box input:focus,
-.contact textarea:focus {
-  outline: none;
-  border-color: #e91e63; /* Adjust to match theme color */
-}
-
-/* Submit Button Styling */
 .contact .btn {
   width: 100%;
   padding: 15px;
   border: none;
   border-radius: 5px;
-  background-color: #e91e63; /* Adjust to theme color */
+  background-color: #e91e63;
   color: #ffffff;
   font-size: 1em;
   font-weight: bold;
@@ -595,18 +478,99 @@ footer {
 }
 
 .contact .btn:hover {
-  background-color: #d81b60; /* Darker shade for hover */
+  background-color: #d81b60;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
+/* Responsive Enhancements */
+@media (max-width: 1024px) {
+  .hero-section {
+    flex-direction: column;
+    height: auto;
+    text-align: center;
+    padding-top: 80px;
+  }
+
+  .hero-section .hero,
+  .about-content {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .about-section {
+    flex-direction: column;
+    text-align: center;
+    padding: 30px 20px;
+  }
+
+  .about-image img {
+    width: 90%;
+    margin-bottom: 20px;
+  }
+
   .contact .input-box {
     flex-direction: column;
   }
-}
 
-@media (max-width: 480px) {
-  .contact .heading {
-    font-size: 2em;
+  .cake-gallery {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+  }
+
+  .reviews-container {
+    flex-direction: column;
+    gap: 20px;
   }
 }
+
+@media (max-width: 576px) {
+  .hero h1,
+  .about-content h2,
+  .contact .heading {
+    font-size: 1.8rem;
+  }
+
+  .hero p,
+  .about-content p {
+    font-size: 0.95rem;
+  }
+
+  .gallery-container h1 {
+    font-size: 1.6rem;
+  }
+
+  .logo {
+  font-family: 'Playwrite GB S', cursive;
+  font-size: 1.8rem !important;
+  background: linear-gradient(to top left,#ff75c3,#ff477e,#d095db,#ff9cc5,#f37bb3,#cd93ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+  .review-card {
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .hero-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero-section .img img {
+    width: 90%;
+    max-width: 400px;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero p {
+    font-size: 0.9rem;
+  }
+
+  .cake-item h3 {
+    font-size: 0.9rem;
+  }
+}   
