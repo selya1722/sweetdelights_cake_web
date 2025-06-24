@@ -96,6 +96,28 @@ html {
   background-color: #cc66a5;
 }
 
+.button {
+  background-color: #ee3b62;
+  border-radius: 10px;
+  margin-left: 20px;
+  margin-top: 30px;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 1rem;
+  color: #fffdfd;
+  text-align: center;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+  max-height: fit-content;
+  box-shadow: 2px 2px 4px rgb(107, 107, 107);
+  
+}
+
+.button:hover {
+  background-color: #ca74a2;
+}
+
+
 #menu-toggle {
   display: block !important;
   background: #ff69b4 !important;
@@ -124,28 +146,6 @@ html {
   display: flex;
   gap: 15px;
 }
-/*buttons */
-.button {
-  background-color: #ee3b62;
-  border-radius: 10px;
-  margin-left: 20px;
-  margin-top: 30px;
-  padding: 10px;
-  cursor: pointer;
-  font-size: 1rem;
-  color: #fffdfd;
-  text-align: center;
-  font-weight: 600;
-  transition: background-color 0.3s ease;
-  max-height: fit-content;
-  box-shadow: 2px 2px 4px rgb(107, 107, 107);
-  
-}
-
-.button:hover {
-  background-color: #ca74a2;
-}
-
 
 /* Our Cakes */
 #cakes {
@@ -538,14 +538,16 @@ footer {
     font-size: 1.6rem;
   }
 
-  .logo {
+ /*.logo {
   font-family: 'Playwrite GB S', cursive;
   font-size: 1.8rem !important;
-  background: linear-gradient(to top left,#ff75c3,#ff477e,#d095db,#ff9cc5,#f37bb3,#cd93ff);
+  background: linear-gradient(to top left, #ff75c3, #ff477e, #d095db, #ff9cc5, #f37bb3, #cd93ff);
+  background-clip: text;
   -webkit-background-clip: text;
+  color: transparent;
   -webkit-text-fill-color: transparent;
-}
-
+  display: inline-block;
+}*/
 
   .review-card {
     width: 100%;
